@@ -1,0 +1,15 @@
+[
+  {
+    "name": "social",
+    "title": "Social",
+    "icon": "👥",
+    "domains": ["instagram.com", "facebook.com", "x.com", "tiktok.com", "snapchat.com", "reddit.com"]
+  },
+  {
+    "name": "news",
+    "title": "News",
+    "icon": "📰",
+    "domains": ["news.ycombinator.com", "bbc.com", "cnn.com", "nytimes.com"]
+  },
+  { "name": "video", "title": "Video", "icon": "📺", "domains": ["youtube.com", "netflix.com", "twitch.tv"] }
+]

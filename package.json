@@ -1,0 +1,579 @@
+{
+  "name": "productivity-os",
+  "title": "Productivity OS",
+  "description": "Screenshot capture, clipboard history, floating shelves, health reminders, resource controls, and focus tools for macOS.",
+  "icon": "icon.png",
+  "author": "fimn",
+  "license": "MIT",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "commands": [
+    {
+      "name": "dashboard",
+      "title": "Productivity OS",
+      "description": "All your tools in one place: screenshots, clipboard, Drop Shelf, health reminders, RAM, CPU priority, keep awake, and website blocking",
+      "icon": "command-dashboard.png",
+      "mode": "view",
+      "keywords": [
+        "dashboard",
+        "control",
+        "switches",
+        "focus",
+        "pos"
+      ]
+    },
+    {
+      "name": "start-pomodoro",
+      "title": "Start Pomodoro",
+      "description": "Start the next protected focus round with your saved durations and websites, without opening a window",
+      "icon": "command-quick-focus.png",
+      "mode": "no-view",
+      "keywords": [
+        "pomodoro",
+        "start",
+        "25",
+        "timer",
+        "focus"
+      ]
+    },
+    {
+      "name": "pomodoro",
+      "title": "Pomodoro",
+      "description": "Open the Pomodoro timer: focus rounds, breaks, and the websites each round protects",
+      "icon": "command-start-focus-session.png",
+      "mode": "no-view",
+      "keywords": [
+        "timer",
+        "focus",
+        "break",
+        "rounds",
+        "countdown"
+      ]
+    },
+    {
+      "name": "posture-coach",
+      "title": "Posture Coach",
+      "description": "Optional local posture reminders while you work, independent of Pomodoro; off until enabled and calibrated",
+      "icon": "command-health-breaks.png",
+      "mode": "no-view",
+      "keywords": [
+        "posture",
+        "camera",
+        "slouch",
+        "shoulders",
+        "health"
+      ]
+    },
+    {
+      "name": "unlock-request",
+      "title": "Review Unblock Request",
+      "description": "Review unblocking sites after a one-minute pause; opened directly, it lists the blocked sites to choose from",
+      "icon": "command-unblock-site.png",
+      "mode": "view",
+      "keywords": [
+        "unblock",
+        "review",
+        "cooldown"
+      ]
+    },
+    {
+      "name": "health-breaks",
+      "title": "Health Break Settings",
+      "description": "Set up eye, stretch, and water reminders and the optional local posture coach",
+      "icon": "command-health-breaks.png",
+      "mode": "no-view",
+      "keywords": [
+        "health",
+        "eyes",
+        "stretch",
+        "water",
+        "break",
+        "reminder",
+        "posture",
+        "camera"
+      ]
+    },
+    {
+      "name": "health-break-now",
+      "title": "Take a Health Break",
+      "description": "Show a gentle eye, stretch, and water break popup now",
+      "icon": "command-health-breaks.png",
+      "mode": "no-view",
+      "keywords": [
+        "health",
+        "eyes",
+        "stretch",
+        "water",
+        "break"
+      ]
+    },
+    {
+      "name": "drop-shelf",
+      "title": "New Drop Shelf",
+      "description": "Collect files, text, links, and images in a translucent floating shelf",
+      "icon": "command-drop-shelf.png",
+      "mode": "no-view",
+      "keywords": [
+        "dropover",
+        "shelf",
+        "drag",
+        "drop",
+        "files"
+      ]
+    },
+    {
+      "name": "drop-shelf-clipboard",
+      "title": "Add Clipboard to Shelf",
+      "description": "Create a floating shelf with the current clipboard",
+      "icon": "command-drop-shelf.png",
+      "mode": "no-view",
+      "keywords": [
+        "dropover",
+        "shelf",
+        "drag",
+        "drop",
+        "files"
+      ]
+    },
+    {
+      "name": "drop-shelf-settings",
+      "title": "Drop Shelf Settings",
+      "description": "Configure shake activation, shortcut, and login startup",
+      "icon": "command-drop-shelf.png",
+      "mode": "no-view",
+      "keywords": [
+        "dropover",
+        "shelf",
+        "drag",
+        "drop",
+        "files"
+      ]
+    },
+    {
+      "name": "clipboard-history",
+      "title": "Clipboard History",
+      "description": "Search and paste your local text and code clipboard history",
+      "icon": "command-clipboard-history.png",
+      "mode": "no-view",
+      "keywords": [
+        "clipboard",
+        "copy",
+        "paste",
+        "flycut",
+        "history"
+      ]
+    },
+    {
+      "name": "clipboard-history-settings",
+      "title": "Clipboard History Settings",
+      "description": "Configure collection, privacy, shortcut, and login startup",
+      "icon": "command-clipboard-history.png",
+      "mode": "no-view",
+      "keywords": [
+        "clipboard",
+        "copy",
+        "paste",
+        "flycut",
+        "history"
+      ]
+    },
+    {
+      "name": "resource-guard",
+      "title": "Resource Guard",
+      "description": "Free RAM for Warp and agents by choosing other apps to quit; prioritize coding processes and coordinate heavy jobs",
+      "icon": "command-resource-guard.png",
+      "mode": "view",
+      "keywords": [
+        "ram",
+        "memory",
+        "cpu",
+        "warp",
+        "codex",
+        "claude"
+      ]
+    },
+    {
+      "name": "capture-recording",
+      "title": "Record Short Clip",
+      "description": "Record up to two minutes of the screen, with optional audio, trimming, and GIF export",
+      "icon": "command-screenshot-studio.png",
+      "mode": "no-view"
+    },
+    {
+      "name": "capture-text",
+      "title": "Copy Text from Screen",
+      "description": "Select an area and copy its text, recognized locally on this Mac",
+      "icon": "command-screenshot-studio.png",
+      "mode": "no-view"
+    },
+    {
+      "name": "capture-scroll",
+      "title": "Scrolling Screenshot",
+      "description": "Capture a scrolling area vertically or horizontally, automatically or as you scroll",
+      "icon": "command-screenshot-studio.png",
+      "mode": "no-view"
+    },
+    {
+      "name": "capture-window",
+      "title": "Capture Window",
+      "description": "Click a window to capture it, then annotate, copy, save, or pin it",
+      "icon": "command-screenshot-studio.png",
+      "mode": "no-view"
+    },
+    {
+      "name": "capture-area",
+      "title": "Capture Area",
+      "description": "Drag over part of the screen to capture it; Space switches to window selection",
+      "icon": "command-screenshot-studio.png",
+      "mode": "no-view"
+    },
+    {
+      "name": "capture-screenshot",
+      "title": "Capture Screenshot",
+      "description": "Open the capture overlay to choose an area, window, display, text, or recording",
+      "icon": "command-screenshot-studio.png",
+      "mode": "no-view"
+    },
+    {
+      "name": "screenshot-studio",
+      "title": "Screenshot Studio",
+      "description": "Every capture, annotation, OCR, scrolling, and recording tool in one searchable list",
+      "icon": "command-screenshot-studio.png",
+      "mode": "view"
+    },
+    {
+      "name": "block-site",
+      "title": "Block Site",
+      "description": "Block a website by domain",
+      "icon": "command-block-site.png",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "domain",
+          "placeholder": "Domain (e.g. instagram.com)",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "unblock-site",
+      "title": "Unblock Site",
+      "description": "Review and unblock a website after a one-minute pause; unfinished focus rounds stay protected",
+      "icon": "command-unblock-site.png",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "domain",
+          "placeholder": "Domain (optional)",
+          "type": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "blocked-sites",
+      "title": "Blocked Sites",
+      "description": "List blocked websites; unblock one, a tag, or everything",
+      "icon": "command-blocked-sites.png",
+      "mode": "view"
+    },
+    {
+      "name": "block-preset",
+      "title": "Block Preset",
+      "description": "Block or unblock a whole preset of websites (Social, News, Video)",
+      "icon": "command-block-preset.png",
+      "mode": "view"
+    },
+    {
+      "name": "start-focus-session",
+      "title": "Start Focus Session",
+      "description": "Block a preset for a set duration, then auto-unblock",
+      "icon": "command-start-focus-session.png",
+      "mode": "view"
+    },
+    {
+      "name": "quick-focus",
+      "title": "Quick Focus",
+      "description": "Start a focus session right from the search bar: pick what to block and for how many minutes (default: Social for 30)",
+      "icon": "command-quick-focus.png",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "preset",
+          "type": "dropdown",
+          "placeholder": "Block (Social)",
+          "required": false,
+          "data": [
+            {
+              "title": "Social",
+              "value": "social"
+            },
+            {
+              "title": "News",
+              "value": "news"
+            },
+            {
+              "title": "Video",
+              "value": "video"
+            },
+            {
+              "title": "Currently blocked sites",
+              "value": "custom"
+            }
+          ]
+        },
+        {
+          "name": "minutes",
+          "type": "text",
+          "placeholder": "Minutes (30)",
+          "required": false
+        }
+      ],
+      "keywords": [
+        "focus",
+        "pomodoro",
+        "timer",
+        "block"
+      ]
+    },
+    {
+      "name": "focus-status",
+      "title": "Menu Bar Focus Timer",
+      "description": "Menu bar lock icon and countdown for focus sessions and Pomodoro rounds, with quick website, screen, and tool controls",
+      "icon": "command-focus-status.png",
+      "mode": "menu-bar",
+      "interval": "1m",
+      "keywords": [
+        "focus",
+        "status",
+        "countdown",
+        "menu bar",
+        "lock"
+      ]
+    },
+    {
+      "name": "toggle-color-filters",
+      "title": "Toggle Color Filters",
+      "description": "Turn the macOS Color Filters accessibility setting (e.g. Grayscale) on or off",
+      "icon": "command-toggle-color-filters.png",
+      "mode": "no-view",
+      "keywords": [
+        "grayscale",
+        "greyscale",
+        "color",
+        "filter",
+        "display"
+      ]
+    },
+    {
+      "name": "toggle-menu-bar-icons",
+      "title": "Toggle Menu Bar Icons",
+      "description": "Hide or show the menu bar icons to the left of the Productivity OS divider",
+      "icon": "command-toggle-menu-bar-icons.png",
+      "mode": "no-view",
+      "keywords": [
+        "hide",
+        "menubar",
+        "icons",
+        "status",
+        "tray"
+      ]
+    },
+    {
+      "name": "lock-keep-awake",
+      "title": "Lock Screen and Keep Awake",
+      "description": "Lock the screen while the Mac keeps running: starts a keep-awake session that lets the display sleep (empty: no time limit; replaces a running session), then locks",
+      "icon": "command-lock-keep-awake.png",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "minutes",
+          "type": "text",
+          "placeholder": "Minutes (no limit)",
+          "required": false
+        }
+      ],
+      "keywords": [
+        "lock",
+        "away",
+        "afk",
+        "keep awake",
+        "caffeine",
+        "amphetamine",
+        "sleep"
+      ]
+    },
+    {
+      "name": "amphetamine-start",
+      "title": "Start Keep Awake",
+      "description": "Keep the Mac awake for Amphetamine's default session length; leaves a running session alone",
+      "icon": "command-amphetamine-start.png",
+      "mode": "no-view",
+      "keywords": [
+        "keep awake",
+        "awake",
+        "caffeine",
+        "sleep",
+        "start",
+        "session",
+        "amp",
+        "amp start",
+        "amphetamine"
+      ]
+    },
+    {
+      "name": "amphetamine-quick-start",
+      "title": "Quick Keep Awake",
+      "description": "Keep the Mac awake for the hours, minutes and seconds typed inline (all empty: no time limit); replaces a running session",
+      "icon": "command-amphetamine-quick-start.png",
+      "mode": "no-view",
+      "arguments": [
+        {
+          "name": "hours",
+          "type": "text",
+          "placeholder": "Hours (empty = no limit)",
+          "required": false
+        },
+        {
+          "name": "minutes",
+          "type": "text",
+          "placeholder": "Minutes",
+          "required": false
+        },
+        {
+          "name": "seconds",
+          "type": "text",
+          "placeholder": "Seconds",
+          "required": false
+        }
+      ],
+      "preferences": [
+        {
+          "name": "displaySleepAllowed",
+          "type": "checkbox",
+          "required": false,
+          "default": false,
+          "title": "Display Sleep",
+          "label": "Allow the display to sleep during the session",
+          "description": "When enabled, the session keeps the Mac awake but lets the display turn off."
+        }
+      ],
+      "keywords": [
+        "keep awake",
+        "awake",
+        "caffeine",
+        "sleep",
+        "quick",
+        "duration",
+        "session",
+        "amp",
+        "amp quick",
+        "amphetamine"
+      ]
+    },
+    {
+      "name": "amphetamine-end",
+      "title": "End Keep Awake",
+      "description": "End the current keep-awake session",
+      "icon": "command-amphetamine-end.png",
+      "mode": "no-view",
+      "keywords": [
+        "keep awake",
+        "awake",
+        "sleep",
+        "end",
+        "stop",
+        "session",
+        "amp",
+        "amp end",
+        "amphetamine"
+      ]
+    },
+    {
+      "name": "amphetamine-remaining",
+      "title": "Keep Awake Time Remaining",
+      "description": "Show the time remaining in the current keep-awake session",
+      "icon": "command-amphetamine-remaining.png",
+      "mode": "no-view",
+      "keywords": [
+        "keep awake",
+        "awake",
+        "remaining",
+        "session",
+        "amp",
+        "amp remaining",
+        "amphetamine"
+      ]
+    },
+    {
+      "name": "amphetamine-configure",
+      "title": "Configure Keep Awake",
+      "description": "Keep the Mac awake for a duration (empty: no time limit) or until a specific time; replaces a running session",
+      "icon": "command-amphetamine-configure.png",
+      "mode": "view",
+      "keywords": [
+        "keep awake",
+        "awake",
+        "duration",
+        "time",
+        "until",
+        "interval",
+        "session",
+        "amp",
+        "amp duration",
+        "amp until",
+        "amphetamine"
+      ]
+    },
+    {
+      "name": "run-setup",
+      "title": "Run Setup",
+      "description": "Verify the helper installation and show the setup command",
+      "icon": "command-run-setup.png",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.6.0",
+    "@raycast/utils": "^2.3.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "eslint": "^10.0.0",
+    "prettier": "^3.0.0",
+    "react-test-renderer": "19.0.0",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "build:helper": "swiftc -O native/menubar-divider.swift -o assets/menubar-divider",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "publish": "ray publish",
+    "test": "python3 tests/helper.test.py && python3 tests/setup-scripts.test.py && node --test --test-concurrency=2 tests/lib.test.cjs tests/ui.test.cjs tests/native-launcher.test.cjs tests/screenshot-studio-client.test.cjs tests/clipboard-history-client.test.cjs tests/drop-shelf-client.test.cjs tests/health-breaks-client.test.cjs",
+    "typecheck": "tsc --noEmit",
+    "build:check": "ray build -o dist",
+    "fix-lint": "ray lint --fix",
+    "build:icons": "swift native/make-icons.swift assets",
+    "build:resource-guard": "swiftc -O native/resource-guard/Core.swift native/resource-guard/Apps.swift native/resource-guard/main.swift -o assets/resource-guard",
+    "test:resource-guard": "bash tests/resource-guard/run.sh",
+    "build:resource-priority": "swiftc -O native/resource-guard/Core.swift native/resource-guard/Apps.swift native/resource-priority/Priority.swift native/resource-priority/main.swift -o assets/resource-priority",
+    "build:screenshot-studio": "bash assets/build-screenshot-studio.sh",
+    "test:screenshot-studio": "bash tests/screenshot-studio/run.sh",
+    "build:clipboard-history": "bash assets/build-clipboard-history.sh",
+    "test:clipboard-history": "bash tests/clipboard-history/run.sh",
+    "build:drop-shelf": "bash assets/build-drop-shelf.sh",
+    "test:drop-shelf": "bash tests/drop-shelf/run.sh",
+    "build:health-breaks": "bash assets/build-health-breaks.sh",
+    "test:health-breaks": "bash tests/health-breaks/run.sh",
+    "build:focus-probe": "bash assets/build-focus-probe.sh",
+    "test:posture": "bash tests/posture/run.sh"
+  }
+}
